@@ -1,0 +1,13 @@
+# Normalize line endings: text files are stored with LF in the repo.
+* text=auto eol=lf
+
+# Keep shell scripts LF even when checked out on Windows.
+*.sh text eol=lf
+
+# Binary artifacts — never touch line endings or try to diff.
+*.zip   binary
+*.pkl   binary
+*.png   binary
+*.stl   binary
+*.obj   binary
+*.npy   binary

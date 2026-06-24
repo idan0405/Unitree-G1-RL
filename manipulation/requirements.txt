@@ -1,0 +1,13 @@
+# G1 manipulation (ManiSkill3 + PyTorch PPO)
+# Python 3.10+.  REQUIRES an NVIDIA GPU + CUDA: the trainer uses the
+# physx_cuda simulation backend and keeps all rollouts on the GPU.
+#
+# Install ManiSkill 3 by following https://maniskill.readthedocs.io/
+# (it pins compatible torch / sapien / gymnasium versions).
+mani_skill            # ManiSkill 3
+torch>=2.1
+numpy>=1.24
+gymnasium>=0.29
+tensorboard>=2.14
+tyro>=0.7             # CLI parsing for reference/official_ppo.py
+cloudpickle>=3.0     # used by tests/test_pickle.py

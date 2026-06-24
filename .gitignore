@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Large / generated assets — kept on disk, never committed.
+# See each sub-project's README for how to (re)generate or download these.
+# ---------------------------------------------------------------------------
+
+# Vendored robot models (clone separately, ~2 GB):
+#   git clone https://github.com/google-deepmind/mujoco_menagerie
+mujoco_menagerie/
+
+# Training checkpoints, tensorboard runs and logs (can be many GB)
+models/
+runs/
+logs/
+*.tfevents.*
+MUJOCO_LOG.TXT
+
+# Note: locomotion/pretrained/ IS committed (small demo policy) and is not ignored.
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
